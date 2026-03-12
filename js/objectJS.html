@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myInfo={
+            name:"Janvi",
+            age:19,
+            isMarried:false,
+            address:{
+                streetNo:2,
+                area:"roorkee road",
+                pincode:250001,
+                city:"Meerut",
+
+            
+            },
+            course:"btech",
+            branch:"cse",
+            year:2025,
+            education:function(){
+                 return console.log("my education is "+myInfo.course +"  "+
+        myInfo.branch + "and"+myInfo.year);
+        },
+        state:"UP",
+
+    }
+   console.log(myInfo.education);
+    console.log(myInfo.address.city); //access using dot notation
+    console.log(myInfo["name"]); //access using bracket notation
+
+//find object length
+let keys=Object.keys(myInfo);
+console.log(keys.length);
+
+ //delete object property
+  console.log(delete myInfo.name);
+    console.log(myInfo);
+
+    //print object's property using for loop
+     for(let i=0; i<key.length; i++){
+        console.log("object keys are" + myInfo[key[i]]);
+    }
+    for(let i=0; i<key.length; i++){
+        console.log("object keys are" + myInfo[key[i]]);
+    }   
+    //print object's property using for in loop
+    for(let x in myInfo){
+        console.log(myInfo[x]);
+    }
+    //create obj using new keyword
+
+    let student=new Object();
+
+    student.name="vikas";
+    student.age=23;
+    student.course="bca";
+    student.address="delhi";
+    student.isMarried=false;
+
+    console.log(student.name);
+
+    </script>
+
+
+
+    </body>
+    </html>
