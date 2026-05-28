@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hide and Show Paragraph</title>
+    <style>
+        #para {
+            display: none;
+            color: blue;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        #box {
+            width: 250px;
+            padding: 20px;
+            background-color: lightpink;
+            text-align: center;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box">Move Mouse Here</div>
+
+    <p id="para">Hello! This paragraph is displayed on mouse hover and hidden on mouse out.</p>
+
+    <script>
+        let box = document.getElementById("box");
+        let para = document.getElementById("para");
+
+        box.addEventListener("mouseover", function() {
+            para.style.display = "block";
+        });
+
+        box.addEventListener("mouseout", function() {
+            para.style.display = "none";
+        });
+    </script>
+
+</body>
+</html>
